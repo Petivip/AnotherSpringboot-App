@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+
+    <title>List</title>
+</head>
+<body >
+<h1>Todo List</h1>
+<a href="/add">Add more</a>
+<div th:each="todo:${todos}">
+    <h3 th:inline="text">[[${todo.name}]]</h3>
+    <h3 th:inline="text">[[${todo.dutDate}]]</h3>
+    <h3 th:text>[[${todo.priority}]]</h3>
+</div>
+
+
+
+<!-- Custom scripts for this template -->
+
+</body>
+</html>
